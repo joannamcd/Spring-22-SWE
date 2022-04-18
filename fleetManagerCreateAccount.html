@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="CreateAccountPageStyle.css">
+
+</head>
+
+<body>
+
+
+    <div class="form">
+
+    <form name="createAccountForm" action="/accountCreated.html" method="post" onsubmit="validateForm()">
+
+		<h1><a href="https://demand.team23.sweispring22.tk/">WeGo </a>- Fleet Manager Create an Account!
+		</h1>
+
+   	<h2>
+		Already have an account?
+		<a href="https://demand.team23.sweispring22.tk/login.html"> Login!</a>
+	<h2>
+
+ 
+
+            <div class="first">
+
+                <label>First Name: * </label>
+
+                <input type="text" name="firstName" required>
+
+
+            </div>
+
+
+            <div class="last">
+
+                <label>Last Name: *</label>
+
+                <input type="text" name="lastName" required>
+
+				
+            </div>
+
+            <div class="phone">
+
+                <label>Phone Number: </label>
+
+                <input type="tel" name="phone" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$"
+				title="Must be a phone number">
+
+
+            </div>
+
+ 
+            <div class="email">
+
+                <label>Email: *</label>
+
+                <input type="email" name="email" required>
+				
+            
+            </div>
+
+
+            <div class="username">
+
+                <label>Create Username: *</label>
+
+                <input type="text" name="username" required>
+ 
+     
+            </div>
+
+            <div class="verify">
+
+                <label>Verification Code: *</label>
+
+                <input type="password" id = "verifyCode" name="code" required>
+
+            </div>
+ 
+
+            <div class="pass">
+
+                <label>Password: *</label>
+				
+				<input type="password" id = "pword"  name = "password" required pattern = 
+				"^(?=.*?[A-Z])(?=(.*[a-z]){1,})(?=(.*[\d]){1,})(?=(.*[\W]){1,})(?!.*\s).{8,}$" 
+				title = "At least 8 characters with one upper case letter, lower case letter, digit, special character" required>
+                
+ 
+            </div>
+
+            <div class="confirm">
+
+                <label>Retype Password: *</label>
+
+                <input type="password" id = "pword2" name="confirmation" required>
+
+            </div>
+
+			<h3>
+			Note: Password must contain at least 8 characters with one upper case letter, lower case letter, digit, special character
+			</h3>
+
+
+
+
+ 
+           <div class="button">
+
+                <button type="submit" id="register" value="register">Create Account</button>
+
+            </div>
+ 
+
+    </div>
+
+    </form>
+	
+	<script type=text/javascript src="fleetManagerCreateAccountJavascript.js"></script>
+
+</body>
+
+ 
+ </html>

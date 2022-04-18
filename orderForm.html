@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+    <link rel="stylesheet" href="CreateAccountPageStyle.css">
+
+
+ 
+<body>
+
+    <div class="form">
+
+    <form name="requestOrderForm" action="/orderRequest.html" method="post" onsubmit="sendOrder()">
+
+		<h1><a href="https://demand.team23.sweispring22.tk/">WeGo </a>- Request an Order
+		</h1>
+
+
+
+
+            <div class="currentLocation">
+
+                <label>Your Address: * </label>
+
+                <input type="text" name="currentLoc" required>
+
+
+            </div>
+
+            <div class="destinationLocation">
+
+                <label>Destination Address: * </label>
+
+                <input type="text" name="destinationLoc" required>
+
+
+            </div>
+
+            <label>Vehicle:</label> <br>
+
+        <div class="radioButtons">
+
+            
+            <input type="radio" id="car" name="typeOfVehicle" value="car">
+            <label for="car">Car</label><br>
+            <input type="radio" id="truck" name="typeOfVehicle" value="truck">
+            <label for="truck">Truck</label><br>
+            <input type="radio" id="van" name="typeOfVehicle" value="van">
+            <label for="van">Van</label>
+
+        </div>
+
+
+
+ 
+           <div class="button">
+
+                <button type="submit" id="requestOrder" value="requestOrder">Request Order</button>
+
+            </div>
+ 
+
+    </div>
+
+    </form>
+
+</body>
+ 
+ </html>
